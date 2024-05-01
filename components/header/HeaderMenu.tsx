@@ -7,7 +7,7 @@ const HeaderMenu = () => {
     const path = usePathname();
 
     return <nav className={styles.menu}>
-        <Link href="/broadcast" className={`${styles.link} ${path === "/broadcast" ? styles.active : ""}`}>
+        {/* <Link href="/broadcast" className={`${styles.link} ${path === "/broadcast" ? styles.active : ""}`}>
             Broadcast
         </Link>
         <Link href="/podcast" className={`${styles.link} ${path === "/podcast" ? styles.active : ""}`}>
@@ -15,7 +15,7 @@ const HeaderMenu = () => {
         </Link>
         <Link href="/live" className={`${styles.link} ${path === "/live" ? styles.active : ""}`}>
             Live
-        </Link>
+        </Link> */}
     </nav>
 }
 

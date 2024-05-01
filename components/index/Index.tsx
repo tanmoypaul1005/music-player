@@ -16,8 +16,10 @@ const Index = ({
     return <section className={styles.section}>
         <IndexTrends trendsInfo={trends} />
         <div className={styles.content}>
-            <IndexArtits artists={topArtists} />
+
             <IndexTopChart musics={topMusics} />
+            <IndexArtits artists={topArtists} />
+
         </div>
     </section>
 }

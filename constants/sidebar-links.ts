@@ -26,38 +26,38 @@ export const SidebarLinks : SidebarLinkInfo[] = [
             }
         ]
     },
-    {
-        id: 402,
-        title: "LIBRARY",
-        links: [
-            {
-                id: 504,
-                title: "Recents",
-                href: "/recents",
-                icon: "recent",
-                child: false,
-            },
-            {
-                id: 505,
-                title: "Favorites",
-                href: "/favorites",
-                icon: "heart",
-                child: false,
-            },
-            {
-                id: 506,
-                title: "Playlists",
-                href: "/playlists",
-                icon: "playlist",
-                child: true,
-            },
-            {
-                id: 507,
-                title: "Profile",
-                href: "/profile",
-                icon: "user",
-                child: true,
-            },
-        ]
-    }
+    // {
+    //     id: 402,
+    //     title: "LIBRARY",
+    //     links: [
+    //         {
+    //             id: 504,
+    //             title: "Recents",
+    //             href: "/recents",
+    //             icon: "recent",
+    //             child: false,
+    //         },
+    //         {
+    //             id: 505,
+    //             title: "Favorites",
+    //             href: "/favorites",
+    //             icon: "heart",
+    //             child: false,
+    //         },
+    //         {
+    //             id: 506,
+    //             title: "Playlists",
+    //             href: "/playlists",
+    //             icon: "playlist",
+    //             child: true,
+    //         },
+    //         {
+    //             id: 507,
+    //             title: "Profile",
+    //             href: "/profile",
+    //             icon: "user",
+    //             child: true,
+    //         },
+    //     ]
+    // }
 ]

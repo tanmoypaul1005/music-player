@@ -28,7 +28,7 @@ const Header = () => {
 
     return <header className={styles.header}>
         <HeaderMenu />
-        <HeaderSearch />
+        {/* <HeaderSearch /> */}
         <div className={styles.box}>
             <ThemeToggler />
             {/* {
