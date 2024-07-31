@@ -78,9 +78,9 @@ const PlayerInfo = ({
                 <div className={styles.title}>{name}</div>
                 <div className={styles.artist}>{artist}</div>
             </div>
-            {
+            {/* {
                 musicId && <FavoriteProvider className={styles.favorite} musicId={musicId} iconClass={styles.icon} activeClass={styles.active}></FavoriteProvider>
-            }
+            } */}
             <button className={`btn ${styles.icon}`}>
                 <Icon icon='playlist' />
             </button>

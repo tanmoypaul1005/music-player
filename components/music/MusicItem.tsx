@@ -21,7 +21,7 @@ const MusicItem = ({
 
     return <li className={styles.item}>
         <div className={styles.fixed}>
-            <FavoriteProvider musicId={musicData.id} className={styles.btn} />
+            {/* <FavoriteProvider musicId={musicData.id} className={styles.btn} /> */}
             <AddToPlayList musicId={musicData.id} className={`${styles.btn} ${styles.playlist}`} />
         </div>
         <div onClick={musicClickHandler}>

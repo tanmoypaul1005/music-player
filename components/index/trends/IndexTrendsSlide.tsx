@@ -43,7 +43,7 @@ const IndexTrendsSlide = ({
                     ? <MainButton type='primary' round>Listening...</MainButton>
                     : <MainButton type='primary' round onClick={musicClickHandler}>Listen Now</MainButton>
                 }
-                <FavoriteProvider className={styles.favorite} musicId={trendInfo.id} activeClass={styles.active}></FavoriteProvider>
+                {/* <FavoriteProvider className={styles.favorite} musicId={trendInfo.id} activeClass={styles.active}></FavoriteProvider> */}
                 
             </div>
         </div>

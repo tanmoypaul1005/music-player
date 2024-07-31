@@ -69,7 +69,7 @@ const IndexTopChartItem = ({
         </Link>
 
         <span className={styles.time}>
-          {durationSeconds ? `${formatedDuration} '` : "00:00 '"}
+          {durationSeconds ? `${formatedDuration}` : "00:00 '"}
         </span>
         <button
           className={`btn ${styles.button} ${styles.play} ${
@@ -80,11 +80,11 @@ const IndexTopChartItem = ({
           <Icon icon={currentMusic && isPlaying ? "pause-fill" : "play"} />
         </button>
 
-        <FavoriteProvider
+        {/* <FavoriteProvider
           className={`btn ${styles.button} ${styles.favorite}`}
           musicId={musicData.id}
           activeClass={styles.active}
-        ></FavoriteProvider>
+        ></FavoriteProvider> */}
         {!inPlaylist ? (
           <AddToPlayList
             musicId={musicData.id}
