@@ -36,13 +36,13 @@ const PlayerInfo = ({
 
     if ( playList.length ) {
         if ( type === "shuffle" ) {
-            const currentMusicShuffleIndex = indexs.findIndex(indexes => indexes === playList.findIndex(music => music.id === currentMusic.id))
-            indexs.forEach((sortIndex, index) => {
+            const currentMusicShuffleIndex = indexs.findIndex(indexes => indexes === playList?.findIndex(music => music?.id === currentMusic?.id))
+            indexs?.forEach((sortIndex, index) => {
                 const music = playList[sortIndex]
 
-                playListItems.push({
-                    key: music.id,
-                    label: <PlayerInfoPlayListItem musicData={music} className={`${currentMusic && music.id === currentMusic.id ? styles.play : ""} ${currentMusicShuffleIndex > index ? styles.passed : ""}`} />
+                playListItems?.push({
+                    key: music?.id,
+                    label: <PlayerInfoPlayListItem musicData={music} className={`${currentMusic && music?.id === currentMusic?.id ? styles?.play : ""} ${currentMusicShuffleIndex > index ? styles?.passed : ""}`} />
                 })
             })
         } else {
