@@ -16,4 +16,4 @@ A sleek and modern music player web application where you can listen to your fav
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/my-music-player.git
+   git clone https://github.com/tanmoypaul1005/my-music-store
