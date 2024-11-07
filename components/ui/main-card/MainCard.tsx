@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React, { CSSProperties } from 'react'
-
 import styles from './MainCard.module.scss'
 
 const MainCard = ({

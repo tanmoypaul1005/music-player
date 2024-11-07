@@ -15,7 +15,7 @@ const IndexArtistItem = ({
     const formatedTotalPlayed = useNumber(totalPlayed)
 
     return <li>
-        <Link className={styles.artist} href="/">
+        <Link className={styles.artist} href="/artists">
             <Image
                 className={styles.img}
                 src={artistData.avatar}

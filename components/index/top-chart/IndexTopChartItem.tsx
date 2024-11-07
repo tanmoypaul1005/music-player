@@ -85,7 +85,7 @@ const IndexTopChartItem = ({
           musicId={musicData.id}
           activeClass={styles.active}
         ></FavoriteProvider> */}
-        {!inPlaylist ? (
+        {/* {!inPlaylist ? (
           <AddToPlayList
             musicId={musicData.id}
             className={`${styles.button} ${styles.playlist}`}
@@ -94,7 +94,7 @@ const IndexTopChartItem = ({
           <button onClick={removeFromPlaylistClickHandler} className={`btn ${styles.playlist} ${styles.remove}`}>
             <Icon icon="minus" />
           </button>
-        )}
+        )} */}
       </div>
     </li>
   );
