@@ -3,6 +3,7 @@ const formatPlaylistTitle = (title: string) : string => {
         .split(" ")
         .at(-1)[0]
         .toUpperCase()}`;
+        
 }
 
 export default formatPlaylistTitle;

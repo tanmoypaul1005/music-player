@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "@types/node": "20.4.2",
     "@types/react": "^18.2.15",

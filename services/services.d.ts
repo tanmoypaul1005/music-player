@@ -3,7 +3,6 @@ interface ServiceResponse<T> {
     error: string,
     data?: T
 }
-
 interface PostResponse {
     body: {},
     bodyUsed: boolean,

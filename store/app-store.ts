@@ -4,6 +4,7 @@ import { useUserStore } from './user-store'
 const STORAGE_NAME = process.env.NEXT_PUBLIC_APP_STORE
 
 const shuffleSortIndex = <T>(arr: T[]): number[] => {
+
     const indexes: number[] = arr.map((_, index) => index);
   
     for (let i = indexes.length - 1; i > 0; i--) {
