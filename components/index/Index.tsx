@@ -14,6 +14,7 @@ const Index = ({
     topMusics: Music[],
 }) => {
     return <section className={styles.section}>
+        
         <IndexTrends trendsInfo={trends} />
         <div className={styles.content}>
 

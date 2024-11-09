@@ -41,6 +41,7 @@ const IndexTopChartItem = ({
         setIsPlaying(true);
       }
     } else {
+      console.log("play music",musicData)
       onMusicClick("play", musicData);
     }
   };
@@ -69,7 +70,7 @@ const IndexTopChartItem = ({
         </Link>
 
         <span className={styles.time}>
-          {durationSeconds ? `${formatedDuration}` : "00:00 '"}
+          {durationSeconds ? `${formatedDuration}` : "00:00"}
         </span>
         <button
           className={`btn ${styles.button} ${styles.play} ${

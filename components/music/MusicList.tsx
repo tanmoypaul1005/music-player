@@ -1,8 +1,6 @@
 "use client";
 import { useAppStore } from "@/store/app-store";
-
 import MusicItem from "./MusicItem";
-
 import styles from "./MusicList.module.scss";
 
 const MusicList = ({

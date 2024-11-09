@@ -13,8 +13,8 @@ const encrypt = (data: string) : string => {
 };
 
 const decrypt = (data: string) : number => {
-  const iv = Buffer.from(data.slice(0, IV_LENGTH * 2), 'hex');
-  const encryptedData = Buffer.from(data.slice(IV_LENGTH * 2), ENCODING);
+  const iv = Buffer.from(data?.slice(0, IV_LENGTH * 2), 'hex');
+  const encryptedData = Buffer?.from(data?.slice(IV_LENGTH * 2), ENCODING);
   const decipher = crypto.createDecipheriv(ALGORITHM, Buffer.from(KEY, 'hex'), iv);
   const decrypted = Buffer.concat([decipher.update(encryptedData), decipher.final()]);
   return Number(decrypted.toString('utf-8'));
