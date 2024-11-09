@@ -29,7 +29,7 @@ const IndexTopChart = ({
             text="See all"
         >
             <ul className={styles.list}>
-                {
+            {
                     musics.map((music, index) => (
                         <IndexTopChartItem key={music.id} musicData={music} index={index+1} onMusicClick={playMusicClickHandler} />
                     ))

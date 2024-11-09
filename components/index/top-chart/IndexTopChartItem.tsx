@@ -41,6 +41,7 @@ const IndexTopChartItem = ({
         setIsPlaying(true);
       }
     } else {
+      console.log("play music",musicData)
       onMusicClick("play", musicData);
     }
   };

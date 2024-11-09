@@ -1,0 +1,49 @@
+{
+  "music": [
+    {
+      "id": 101,
+      "name": "Mayabono Biharini Horini",
+      "src": "/musics/Mayabono Biharini Horini.mp3",
+      "artist": "Somlata",
+      "coverImage": "https://i.imgur.com/DXSXeCg.jpeg",
+      "avatar": "https://i.imgur.com/DXSXeCg.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 102,
+      "name": "Ami Hridoyer Kawtha",
+      "src": "/musics/bangla/ami-hridoyer-kawtha.mp3",
+      "artist": "Jayati Chakraborty",
+      "coverImage": "https://i.imgur.com/mju9xf4.jpeg",
+      "avatar": "https://i.imgur.com/mju9xf4.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 103,
+      "name": "OREY NEEL DORIYA",
+      "src": "/musics/bangla/orey-neel-doriya.mp3",
+      "artist": "Pabon",
+      "coverImage": "https://i.scdn.co/image/ab6761610000e5eb29f045bb0d86147623b01b24",
+      "avatar": "https://i.scdn.co/image/ab6761610000e5eb29f045bb0d86147623b01b24",
+      "playedCount": 12000
+    },
+    {
+      "id": 104,
+      "name": "AMAR PROTICCHOBI-[AURTHOHIN]",
+      "src": "/musics/bangla/orey-neel-doriya.mp3",
+      "artist": "Bassbaba Sumon",
+      "coverImage": "https://i.imgur.com/gtpAb2P.jpeg",
+      "avatar": "https://i.imgur.com/gtpAb2P.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 105,
+      "name": "Se Je Boshe Ache by Arnob",
+      "src": "/musics/bangla/se-je-boshe-ache.mp3",
+      "artist": "Bassbaba Sumon",
+      "coverImage": "https://i.imgur.com/YC3LbQ8.jpeg",
+      "avatar": "https://i.imgur.com/YC3LbQ8.jpeg",
+      "playedCount": 12000
+    }
+  ]
+}
