@@ -32,7 +32,7 @@ const MainCard = ({
 
   return (
     <div className={classes} style={{ ...style }}>
-      {pathName === "/" && <div
+      {(pathName === "/" && title== "Top Charts" ) &&  <div
         style={{
           marginBottom: "20px",
         }}
