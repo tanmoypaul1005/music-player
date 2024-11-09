@@ -51,6 +51,13 @@ export const SidebarLinks : SidebarLinkInfo[] = [
                 icon: "playlist",
                 child: true,
             },
+            {
+                id: 506,
+                title: "Hindi Songs",
+                href: "/hindi-song",
+                icon: "playlist",
+                child: true,
+            },
             // {
             //     id: 507,
             //     title: "Profile",

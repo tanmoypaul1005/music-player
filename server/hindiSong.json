@@ -1,0 +1,13 @@
+{
+  "music": [
+    {
+      "id": 201,
+      "name": "Papon - Jiyein Kyun",
+      "src": "/musics/hindi/JiyeinKyun.mp3",
+      "artist": "Papon",
+      "coverImage": "https://i.imgur.com/snDG9Wo.jpeg",
+      "avatar": "https://i.imgur.com/snDG9Wo.jpeg",
+      "playedCount": 12000
+    }
+  ]
+}

@@ -1,6 +1,4 @@
 import MenuList from './menu/MenuList';
-
-import styles from './SidebarMenu.module.scss'
 import { SidebarLinks } from '@/constants/sidebar-links';
 
 const SidebarMenu = () => {
