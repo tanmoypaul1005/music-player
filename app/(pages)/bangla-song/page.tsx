@@ -1,14 +1,41 @@
+"use client";
 import BanglaSongList from "@/components/bangla/BanglaSongList";
 import Musics from "@/components/msuics/Musics";
+import MusicItem from "@/components/music/MusicItem";
+import musicList from "@/server/banglaSong.json";
+import { useAppStore } from "@/store/app-store";
+import styles from "@/components/music/MusicList.module.scss";
 
-export const metadata = {
-  title: "Musics",
-};
+const MusicsPage = () => {
 
-const MusicsPage = async () => {
+  const PLAY_LIST_ID = "top-charts-musics-playlist";
+
+  const [setMusic, setPlaylist, id] = useAppStore((state) => [
+    state.setMusic,
+    state.setPlaylist,
+    state.playListId,
+  ]);
+
+  const musicClickHandler = (music: Music) => {
+    setMusic(music);
+    if (id !== PLAY_LIST_ID) {
+      setPlaylist(PLAY_LIST_ID, musicList?.music);
+    }
+  };
+
+
   return (
     <>
-      <BanglaSongList />
+      <h3 className={styles.title}>Top bangla song</h3>
+      <ul className={styles.list}>
+        {musicList?.music?.map((music) => (
+          <MusicItem
+            key={music.id}
+            musicData={music}
+            onMusicClick={musicClickHandler}
+          />
+        ))}
+      </ul>
     </>
   );
 };
