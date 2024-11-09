@@ -1,6 +1,4 @@
 "use client";
-import BanglaSongList from "@/components/bangla/BanglaSongList";
-import Musics from "@/components/msuics/Musics";
 import MusicItem from "@/components/music/MusicItem";
 import musicList from "@/server/banglaSong.json";
 import { useAppStore } from "@/store/app-store";

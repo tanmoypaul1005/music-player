@@ -28,6 +28,8 @@ const IndexTopChart = ({
             link="/musics"
             text="See all"
         >
+            
+
             <ul className={styles.list}>
             {
                     musics.map((music, index) => (
