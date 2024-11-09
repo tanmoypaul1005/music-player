@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link";
 import React, { CSSProperties } from "react";
 import styles from "./MainCard.module.scss";
 import BanglaSongList from "@/components/bangla/BanglaSongList";
+import { usePathname } from "next/navigation";
 
 const MainCard = ({
   children,
@@ -26,15 +28,18 @@ const MainCard = ({
 }) => {
   const classes = `${styles.card} ${className ? className : ""}`;
 
+  const pathName = usePathname();
+
   return (
     <div className={classes} style={{ ...style }}>
-      <div
+      {pathName === "/" && <div
         style={{
           marginBottom: "20px",
         }}
       >
         <BanglaSongList />
-      </div>
+      </div>}
+
       {!loading ? (
         title && (
           <div className={styles.header}>
