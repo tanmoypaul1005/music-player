@@ -12,13 +12,20 @@ export const SidebarLinks : SidebarLinkInfo[] = [
             },
             {
                 id: 502,
+                title: "Top Songs",
+                href: "/top-song",
+                icon: "playlist",
+                child: true,
+            },
+            {
+                id: 503,
                 title: "Musics",
                 href: "/musics",
                 icon: "category",
                 child: true,
             },
             {
-                id: 503,
+                id: 504,
                 title: "Artists",
                 href: "/artists",
                 icon: "setting",
