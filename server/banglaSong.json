@@ -40,10 +40,19 @@
       "id": 105,
       "name": "Se Je Boshe Ache by Arnob",
       "src": "/musics/bangla/se-je-boshe-ache.mp3",
-      "artist": "Bassbaba Sumon",
+      "artist": "Arnob",
       "coverImage": "https://i.imgur.com/YC3LbQ8.jpeg",
       "avatar": "https://i.imgur.com/YC3LbQ8.jpeg",
-      "playedCount": 12000
+      "playedCount": 42000
+    },
+    {
+      "id": 106,
+      "name": "Amake Amar Moto Thakte Dao by Anupam Roy",
+      "src": "/musics/amake-amar-moto-thakte-dao.mp3",
+      "artist": "Anupam Roy",
+      "coverImage": "https://i.imgur.com/OLh8g0G.jpeg",
+      "avatar": "https://i.imgur.com/OLh8g0G.jpeg",
+      "playedCount": 26000
     }
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "music": [
+    {
+      "id": 401,
+      "name": "Wiz Khalifa - See You Again ft. Charlie Puth",
+      "src": "/musics/topSong/See-ou gain ft.mp3",
+      "artist": "Wiz Khalifa",
+      "coverImage": "https://i.imgur.com/Pn4G1Xn.jpeg",
+      "avatar": "https://i.imgur.com/Pn4G1Xn.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 402,
+      "name": "Ed Sheeran - Shape of You",
+      "src": "/musics/topSong/ed-sheeran-shape-of-you.mp3",
+      "artist":"Ed Sheeran ",
+      "coverImage": "https://i.imgur.com/UAJl3ah.jpeg",
+      "avatar": "https://i.imgur.com/UAJl3ah.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 403,
+      "name": "Ed Sheeran - Shape of You",
+      "src": "/musics/topSong/passenger_ let_her_go.mp3",
+      "artist":"Michael David Rosenberg",
+      "coverImage": "https://i.imgur.com/M8pr3OH.jpeg",
+      "avatar": "https://i.imgur.com/M8pr3OH.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 404,
+      "name": "Maroon 5 - Memories",
+      "src": "/musics/topSong/maroon5 -memories.mp3",
+      "artist":"Maroon 5",
+      "coverImage": "https://i.imgur.com/HC2yHE9.jpeg",
+      "avatar": "https://i.imgur.com/HC2yHE9.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 405,
+      "name": "Bon Jovi - It's My Life",
+      "src": "/musics/topSong/bonjovi-Its-my-life.mp3",
+      "artist":"Bon Jovi",
+      "coverImage": "https://i.imgur.com/B0eagpk.jpeg",
+      "avatar": "https://i.imgur.com/B0eagpk.jpeg",
+      "playedCount": 12000
+    },
+    {
+      "id": 406,
+      "name": "Calum Scott - You Are The Reason",
+      "src": "/musics/topSong/calum-scott-you-are-the-reason.mp3",
+      "artist":"Calum Scott",
+      "coverImage": "https://i.imgur.com/ENUfVO7.jpeg",
+      "avatar": "https://i.imgur.com/ENUfVO7.jpeg",
+      "playedCount": 12000
+    }
+  ]
+}
