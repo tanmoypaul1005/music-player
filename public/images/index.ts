@@ -7,9 +7,6 @@ import loginBackgroundImage from './background/login.webp'
 import profileBackgroundImage from './background/profile.webp'
 import artistsBackgroundImage from './background/artists.webp'
 
-import googleImage from './socials/google.webp'
-import facebookImage from './socials/facebook.webp'
-import githubImage from './socials/github.webp'
 
 export {
     logo,
@@ -20,8 +17,4 @@ export {
     loginBackgroundImage,
     profileBackgroundImage,
     artistsBackgroundImage,
-
-    googleImage,
-    facebookImage,
-    githubImage,
 }
