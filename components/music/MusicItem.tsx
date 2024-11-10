@@ -1,9 +1,4 @@
 import Image from 'next/image'
-
-import FavoriteProvider from '@/components/providers/FavoriteProvider'
-import AddToPlayList from '../helper/AddToPlayList'
-import useNumber from '@/hooks/use-number'
-
 import styles from './MusicItem.module.scss'
 
 const MusicItem = ({
@@ -13,8 +8,6 @@ const MusicItem = ({
     musicData: Music
     onMusicClick: (music: Music) => void,
 }) => {
-    const formatedNumber = useNumber(musicData.playedCount)
-
     const musicClickHandler = () => {
         onMusicClick(musicData)
     }
@@ -31,10 +24,10 @@ const MusicItem = ({
                 width={160}
                 height={160}
                 loading='lazy'
-                alt={`${musicData.name} cover image`}
+                alt={`${musicData?.name} cover image`}
             />
             <h5 className={styles.title}>{musicData.name}</h5>
-            <span className={styles.text}>{musicData.artist}, <small>{formatedNumber}</small></span>
+            <span className={styles.text}>{musicData.artist}</span>
         </div>
     </li>
 }
