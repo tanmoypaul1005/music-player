@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useEffect, useState } from 'react';
 import { useAppStore } from '@/store/app-store';
 import { Slider, Dropdown, message } from 'antd';
@@ -103,7 +104,7 @@ const PlayerControl = ({
     }, [music, isPlaying]);
 
     const musicTimeUpdateHandler = () => {
-        if ( ref.current.currentTime === duration ) changeMusic("next", true)
+        if ( ref?.current?.currentTime === duration ) changeMusic("next", true)
         else setCurrentTime(ref.current.currentTime) 
     }
 
