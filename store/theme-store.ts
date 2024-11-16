@@ -9,7 +9,7 @@ const changeThemeLocalStorage = (dark: string) => {
 }
 
 export const useThemeStore = create<ThemeStoreState>() ((set) => ({
-    darkMode: false,
+    darkMode: true,
     setInitialDarkMode: (dark: boolean) => {
         set(() => ({
             darkMode: dark

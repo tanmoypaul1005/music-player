@@ -1,10 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import { Dropdown } from 'antd'
 import type { MenuProps } from 'antd';
-
 import { useAppStore } from '@/store/app-store';
-
-import FavoriteProvider from '@/components/providers/FavoriteProvider'
 import PlayerInfoPlayListItem from './PlayerInfoPlayListItem';
 import Icon from '../ui/Icon'
 import NotFound from '../ui/not-found/NotFound';
@@ -78,9 +75,6 @@ const PlayerInfo = ({
                 <div className={styles.title}>{name}</div>
                 <div className={styles.artist}>{artist}</div>
             </div>
-            {/* {
-                musicId && <FavoriteProvider className={styles.favorite} musicId={musicId} iconClass={styles.icon} activeClass={styles.active}></FavoriteProvider>
-            } */}
             <button className={`btn ${styles.icon}`}>
                 <Icon icon='playlist' />
             </button>
