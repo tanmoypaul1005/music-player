@@ -14,8 +14,8 @@
       "name": "Ami Hridoyer Kawtha",
       "src": "/musics/bangla/ami-hridoyer-kawtha.mp3",
       "artist": "Jayati Chakraborty",
-      "coverImage": "https://i.imgur.com/mju9xf4.jpeg",
-      "avatar": "https://i.imgur.com/mju9xf4.jpeg",
+      "coverImage": "/images/artist/jayati-chakraborty.jpeg",
+      "avatar": "/images/artist/jayati-chakraborty.jpeg",
       "playedCount": 12000
     },
     {
@@ -32,8 +32,8 @@
       "name": "AMAR PROTICCHOBI-[AURTHOHIN]",
       "src": "/musics/bangla/orey-neel-doriya.mp3",
       "artist": "Bassbaba Sumon",
-      "coverImage": "https://i.imgur.com/gtpAb2P.jpeg",
-      "avatar": "https://i.imgur.com/gtpAb2P.jpeg",
+      "coverImage": "/images/artist/bassbaba-sumon.webp",
+      "avatar": "/images/artist/bassbaba-sumon.webp",
       "playedCount": 12000
     },
     {
@@ -41,8 +41,8 @@
       "name": "Se Je Boshe Ache by Arnob",
       "src": "/musics/bangla/se-je-boshe-ache.mp3",
       "artist": "Arnob",
-      "coverImage": "https://i.imgur.com/YC3LbQ8.jpeg",
-      "avatar": "https://i.imgur.com/YC3LbQ8.jpeg",
+      "coverImage": "/images/artist/arnob.webp",
+      "avatar": "/images/artist/arnob.webp",
       "playedCount": 42000
     },
     {
@@ -50,8 +50,8 @@
       "name": "Amake Amar Moto Thakte Dao by Anupam Roy",
       "src": "/musics/amake-amar-moto-thakte-dao.mp3",
       "artist": "Anupam Roy",
-      "coverImage": "https://i.imgur.com/OLh8g0G.jpeg",
-      "avatar": "https://i.imgur.com/OLh8g0G.jpeg",
+      "coverImage": "/images/artist/anupam-roy.jpeg",
+      "avatar": "/images/artist/anupam-roy.jpeg",
       "playedCount": 26000
     }
   ]

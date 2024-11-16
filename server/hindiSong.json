@@ -5,8 +5,8 @@
       "name": "Papon - Jiyein Kyun",
       "src": "/musics/hindi/JiyeinKyun.mp3",
       "artist": "Papon",
-      "coverImage": "https://i.imgur.com/snDG9Wo.jpeg",
-      "avatar": "https://i.imgur.com/snDG9Wo.jpeg",
+      "coverImage": "https://i.scdn.co/image/ab6761610000e5eb29f045bb0d86147623b01b24",
+      "avatar": "https://i.scdn.co/image/ab6761610000e5eb29f045bb0d86147623b01b24",
       "playedCount": 12000
     },
     {
@@ -14,8 +14,8 @@
       "name": "Atif Aslam: Pehli Dafa Song ",
       "src": "/musics/hindi/PehliDafa.mp3",
       "artist": "Atif Aslam",
-      "coverImage": "https://i.imgur.com/pZNbzlK.jpeg",
-      "avatar": "https://i.imgur.com/pZNbzlK.jpeg",
+      "coverImage": "/images/artist/atif-aslam.jpeg",
+      "avatar": "/images/artist/atif-aslam.jpeg",
       "playedCount": 19000
     }
   ]
