@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 import ThemeProvider from '@/components/theme/Theme'
-import PlayListProvider from '@/components/providers/PlayListProvider'
 import Sidebar from '@/components/sidebar/Sidebar'
 import Header from '@/components/header/Header'
 
@@ -40,7 +39,6 @@ export default function RootLayout({
               <Header />
               {children}
               <Player />
-              <PlayListProvider />
             </div>
           </div>
         </ThemeProvider>
