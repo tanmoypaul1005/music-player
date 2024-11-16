@@ -2,10 +2,7 @@ interface authStoreState {
     token: string,
     id: number,
     setInitialAuth: (token: string, id: number) => void,
-    login: (payload: LoginPayload) => Promise<StoreResponse<string>>,
-    Register: (payload: RegisterPayload) => Promise<StoreResponse<string>>,
-    LoginHelper: (token: string, user: User) => void,
-    logout: () => void
+ 
 }
 
 interface ThemeStoreState {
@@ -48,8 +45,7 @@ interface UserStoreState {
     recent: Music[],
     favorite: Music[],
     userInfo: UserInfo,
-    login: (user: User) => void,
-    logout: () => void,
+
     setFavorite: (music: Music) => void,
     setRecent: (music: Music) => void,
     setUserInfo: (payload: User) => void,

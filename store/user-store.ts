@@ -14,32 +14,7 @@ export const useUserStore = create<UserStoreState>() ((set) => ({
     recent: [],
     favorite: [],
     userInfo: null,
-    login: (user: User) => {
-        const userInfo : UserInfo = {
-            id: user.id,
-            birthDate: user.birthDate,
-            email: user.email,
-            creationDate: user.creationDate,
-            password: user.password,
-            userName: user.userName,
-            profileImage: user.profileImage,
-            modificationDate: user.modificationDate
-        }
-        set(() => ({
-            playLists: user.playLists,
-            recent: user.recent,
-            favorite: user.favorite,
-            userInfo,
-        }))
-    },
-    logout: () => {
-        set(() => ({
-            playLists: [],
-            recent: [],
-            favorite: [],
-            userInfo: null,
-        }))
-    },
+ 
     setFavorite: async (music: Music) => {
         const res = await PutUserFavorite(useUserStore.getState().userInfo.id, music)
 
