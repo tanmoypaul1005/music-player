@@ -1,9 +1,3 @@
-interface LoginSignUpPayload {
-    email: string,
-    password: string
-    rePassword?: string,
-    birthDate?: AntDesignDatePickerValue,
-}
 
 type AntDesignDatePickerValue = {
     $M: number;
@@ -20,11 +14,6 @@ type AntDesignDatePickerValue = {
     $y: number;
 }
 
-interface AddPlayListPayload {
-    playlistTitle: string,
-    playlistDescription: string,
-    playlistColor: AntDesignColorPickerType
-}
 
 type AntDesignColorPickerType = {
     metaColor: {
@@ -47,14 +36,7 @@ type OriginalInput = {
     v: number
 }
 
-interface UserEditPayload {
-    username: string,
-    oldpassword?: string,
-    newpassword?: string,
-    repassword?: string,
-    birthdate?: AntDesignDatePickerValue
-    profileimage?: string
-}
+
 
 type playChangeType ="play" | "pause"
 
