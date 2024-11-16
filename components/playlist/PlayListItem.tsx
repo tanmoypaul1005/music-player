@@ -5,7 +5,6 @@ import { CSSProperties } from "react";
 import { Avatar, Popconfirm } from "antd";
 
 import { useAppStore } from "@/store/app-store";
-import { useUserStore } from "@/store/user-store";
 import { formatPlaylistTitle } from "@/utils";
 
 import Icon from "../ui/Icon";
@@ -13,8 +12,7 @@ import styles from "./PlayListItem.module.scss";
 
 const PlayListItem = ({
   playlistData,
-  index,
-  onShowMessage,
+  index
 }: {
   playlistData: PlayList;
   index: number;
@@ -32,7 +30,7 @@ const PlayListItem = ({
       state.setPlayingState,
     ]
   );
-  const deletePlaylist = useUserStore((state) => state.deletePlayList);
+
 
   const count: string = index < 10 ? `0${index}` : `${index}`;
   const color: string = playlistData.color;
@@ -51,12 +49,6 @@ const PlayListItem = ({
 
   const PopconfirmOkHandler = async () => {
     setLoading(true);
-    const { status, statusText, data } = await deletePlaylist(playlistData.id);
-    if ( data ) {
-      setLoading(false);
-      hidePopConfirm()
-    }
-    onShowMessage(status === 201 ? "success" : "error", statusText);
   };
 
   const hidePopConfirm = () => {

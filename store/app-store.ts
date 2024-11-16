@@ -1,5 +1,4 @@
 import { create } from 'zustand'
-import { useUserStore } from './user-store'
 
 const STORAGE_NAME = process.env.NEXT_PUBLIC_APP_STORE
 
@@ -114,7 +113,7 @@ export const useAppStore = create<AppStoreState>() ((set) => ({
         if ( !useAppStore.getState().isPlaying ) {
             useAppStore.getState().setPlayingState(true)
         }
-        useUserStore.getState().setRecent(music)
+
     },
     changeMusic: (type: ChangeMusicType, auto?: boolean) => {
         const repeatType = useAppStore.getState().repeatType
@@ -185,7 +184,7 @@ export const useAppStore = create<AppStoreState>() ((set) => ({
             type: "currentMusic",
             music: nextMusic
         })
-        useUserStore.getState().setRecent(nextMusic)
+        
     },
     setCurrentMusicTime: (time: number) => {
         set(() => ({ currentMusicTime: time }))

@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Avatar, message } from "antd";
-
-import { useUserStore } from "@/store/user-store";
 import { useAppStore } from "@/store/app-store";
 
 import MainButton from "@/components/ui/button/MainButton";
@@ -14,7 +12,7 @@ import styles from "./PlayListItem.module.scss";
 const PlayListItem = ({ playlistData }: { playlistData: PlayList }) => {
   const [loading, setLoading] = useState<boolean>(false);
 
-  const setPlaylistMusic = useUserStore((state) => state.setPlayListMusic);
+
   const musicClicked = useAppStore((state) => state.musicClicked);
   const [messageApi, contextHolder] = message.useMessage();
 
@@ -26,16 +24,9 @@ const PlayListItem = ({ playlistData }: { playlistData: PlayList }) => {
 
   const addToPlayListClickHandler = async () => {
     setLoading(true);
-    const { statusText, data } = await setPlaylistMusic(
-      musicIsInPlaylist ? "remove" : "add",
-      musicClicked,
-      playlistData.id
-    );
+ 
     setLoading(false);
-    messageApi.open({
-      type: data ? "success" : "error",
-      content: statusText,
-    });
+ 
   };
 
   return (

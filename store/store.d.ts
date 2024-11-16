@@ -42,17 +42,6 @@ interface AppStoreState {
 
 interface UserStoreState {
     playLists: PlayList[]
-    recent: Music[],
-    favorite: Music[],
-    userInfo: UserInfo,
-
-    setFavorite: (music: Music) => void,
-    setRecent: (music: Music) => void,
-    setUserInfo: (payload: User) => void,
-    addPlayList: (payload: PlayList) => Promise<StoreResponse<PlayList>>,
-    deletePlayList: (id: number) => promise<StoreResponse<string>>,
-    setPlayListMusic: (type: ChangePlayListMusicType, music: Music, playlistId: number) => Promise<StoreResponse<string>>,
-    changePlayListMusicOrder: (playlistId: number, newOrder: Music[]) => void,
 }
 
 interface BaseInfo {

@@ -1,11 +1,7 @@
 "use client"
 import { Modal } from "antd";
 
-import { useUserStore } from "@/store/user-store";
 import { useAppStore } from "@/store/app-store";
-
-import PlayList from "./playlist/PlayList";
-
 const PlayListProvider = () => {
   const [playlistModalOpen, setPlaylistModalOpen, setMusicClicked] =
     useAppStore((state) => [
@@ -13,7 +9,6 @@ const PlayListProvider = () => {
       state.setPlayListModal,
       state.setMusicClicked,
     ]);
-  const playlists = useUserStore((state) => state.playLists);
 
   const hideModal = () => {
     setPlaylistModalOpen(false);
@@ -27,7 +22,7 @@ const PlayListProvider = () => {
       footer={null}
       onCancel={hideModal}
     >
-      <PlayList playlists={playlists} onButtonClick={hideModal} />
+      
     </Modal>
   );
 };

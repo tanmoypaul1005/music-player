@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Avatar, ColorPicker, Form, Input, Modal, Spin } from "antd";
 
 import { useAppStore } from "@/store/app-store";
-import { useUserStore } from "@/store/user-store";
 
 import { rgbaToHex } from "@/utils";
 
@@ -38,7 +37,6 @@ const PlayListAdd = ({
   });
 
   const setDisableKeydown = useAppStore((state) => state.setDisableKeyDown);
-  const addPlaylist = useUserStore((state) => state.addPlayList);
   const [formApi] = Form.useForm();
 
   const avatarProps = {
@@ -64,18 +62,10 @@ const PlayListAdd = ({
       hexColor = rgbaToHex(colorData.r, colorData.g, colorData.b, colorData.a);
     }
 
-    const { status, statusText } = await addPlaylist({
-      id: new Date().getTime(),
-      creationDate: new Date().getTime(),
-      title: payload.playlistTitle,
-      description: payload.playlistDescription,
-      color: hexColor,
-      avatar: image,
-      musics: [],
-    });
+
 
     setLoading(false);
-    onShowMessage(status === 201 ? "success" : "error", statusText);
+    onShowMessage(status === 201 ? "success" : "error","");
     if (status === 201) {
       formApi.resetFields();
       reset();
