@@ -13,7 +13,6 @@ const PlayerInfo = ({
     imageAlt,
     name,
     artist,
-    musicId,
 } : {
     image: string | StaticImageData,
     imageAlt: string,
