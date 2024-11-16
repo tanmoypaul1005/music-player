@@ -37,20 +37,6 @@ export const SidebarLinks : SidebarLinkInfo[] = [
         id: 402,
         title: "LIBRARY",
         links: [
-            // {
-            //     id: 504,
-            //     title: "Recents",
-            //     href: "/recents",
-            //     icon: "recent",
-            //     child: false,
-            // },
-            // {
-            //     id: 505,
-            //     title: "Favorites",
-            //     href: "/favorites",
-            //     icon: "heart",
-            //     child: false,
-            // },
             {
                 id: 506,
                 title: "Bangla Songs",
