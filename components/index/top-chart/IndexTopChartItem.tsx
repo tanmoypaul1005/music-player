@@ -10,7 +10,6 @@ const IndexTopChartItem = ({
   musicData,
   index,
   isDragging,
-  inPlaylist,
   onMusicClick,
 }: {
   musicData: Music;

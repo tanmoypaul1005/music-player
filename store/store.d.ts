@@ -2,10 +2,7 @@ interface authStoreState {
     token: string,
     id: number,
     setInitialAuth: (token: string, id: number) => void,
-    login: (payload: LoginPayload) => Promise<StoreResponse<string>>,
-    Register: (payload: RegisterPayload) => Promise<StoreResponse<string>>,
-    LoginHelper: (token: string, user: User) => void,
-    logout: () => void
+ 
 }
 
 interface ThemeStoreState {
@@ -45,18 +42,6 @@ interface AppStoreState {
 
 interface UserStoreState {
     playLists: PlayList[]
-    recent: Music[],
-    favorite: Music[],
-    userInfo: UserInfo,
-    login: (user: User) => void,
-    logout: () => void,
-    setFavorite: (music: Music) => void,
-    setRecent: (music: Music) => void,
-    setUserInfo: (payload: User) => void,
-    addPlayList: (payload: PlayList) => Promise<StoreResponse<PlayList>>,
-    deletePlayList: (id: number) => promise<StoreResponse<string>>,
-    setPlayListMusic: (type: ChangePlayListMusicType, music: Music, playlistId: number) => Promise<StoreResponse<string>>,
-    changePlayListMusicOrder: (playlistId: number, newOrder: Music[]) => void,
 }
 
 interface BaseInfo {
