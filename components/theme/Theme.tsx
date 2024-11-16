@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import React, { useEffect, useState } from "react";
 
@@ -32,7 +33,7 @@ const ThemeProvider = ({
                 localStorage.setItem(process.env.NEXT_PUBLIC_THEME_STORE, "false")
             } else {
                 const darkModeItem = localStorage.getItem(process.env.NEXT_PUBLIC_THEME_STORE) === "true" ? true : false
-                setInitialDarkMode(darkModeItem)
+                setInitialDarkMode(true)
             }
 
             if ( !localStorage.getItem(process.env.NEXT_PUBLIC_APP_STORE) ) {
