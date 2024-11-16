@@ -4,7 +4,6 @@ const inter = Inter({ subsets: ['latin'] })
 import ThemeProvider from '@/components/theme/Theme'
 import Sidebar from '@/components/sidebar/Sidebar'
 import Header from '@/components/header/Header'
-
 import styles from './layout.module.scss'
 import Player from '@/components/player/Player'
 
