@@ -5,7 +5,6 @@ import notFoundMusicImage from './not-found-music.webp'
 
 import artistsBackgroundImage from './background/artists.webp'
 
-
 export {
     logo,
     notFoundImage,
