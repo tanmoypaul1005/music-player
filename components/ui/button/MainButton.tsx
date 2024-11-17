@@ -1,5 +1,5 @@
 /* other imports */
-import React, { ButtonHTMLAttributes, CSSProperties } from 'react'
+import React, { CSSProperties } from 'react'
 import styles from './MainButton.module.scss'
 
 const convertType = (type: ButtonType) => {
