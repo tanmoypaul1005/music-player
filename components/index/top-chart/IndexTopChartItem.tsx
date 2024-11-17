@@ -5,7 +5,7 @@ import { useAppStore } from "@/store/app-store";
 import useAudioDuration from "@/hooks/use-audio-duration";
 import Icon from "@/components/ui/Icon";
 import styles from "./IndexTopChartItem.module.scss";
-import React, { useEffect, useState,memo } from "react";
+import React, { useEffect, useState, memo } from "react";
 
 const IndexTopChartItem = ({
   musicData,
@@ -29,7 +29,7 @@ const IndexTopChartItem = ({
   const number = index < 10 ? `0${index}` : `${index}`;
   const currentMusic = music && music.id === musicData.id;
 
-  const musicPlayClickHandler = async() => {
+  const musicPlayClickHandler = async () => {
     if (currentMusic) {
       if (isPlaying) {
         setIsPlaying(false);
@@ -37,8 +37,8 @@ const IndexTopChartItem = ({
         setIsPlaying(true);
       }
     } else {
-      console.log("play music",musicData)
-     await onMusicClick("play", musicData);
+      console.log("play music", musicData)
+      await onMusicClick("play", musicData);
     }
   };
 
@@ -59,7 +59,7 @@ const IndexTopChartItem = ({
         });
       };
     }
-  }, [musicData.src,index]);
+  }, [musicData.src]);
 
   const formatDuration = (seconds) => {
     const minutes = Math.floor(seconds / 60);
@@ -86,18 +86,19 @@ const IndexTopChartItem = ({
           <h5 className={styles.title}>{musicData.name}</h5>
           <h6 className={styles.text}>{musicData.artist}</h6>
         </Link>
-
-        <span className={styles.time}>
-          {duration ? formatDuration(duration) : "00:00"}
-        </span>
-        <button
-          className={`btn ${styles.button} ${styles.play} ${
-            currentMusic ? styles.active : ""
-          }`}
-          onClick={musicPlayClickHandler}
-        >
-          <Icon icon={currentMusic && isPlaying ? "pause-fill" : "play"} />
-        </button>
+        {duration ? <>
+          <span className={styles.time}>
+            {duration ? formatDuration(duration) : "00:00"}
+          </span>
+          <button
+            className={`btn ${styles.button} ${styles.play} ${currentMusic ? styles.active : ""
+              }`}
+            onClick={musicPlayClickHandler}
+          >
+            <Icon icon={currentMusic && isPlaying ? "pause-fill" : "play"} />
+          </button>
+        </>: <div>Loading ...</div>
+        }
       </div>
     </li>
   );
