@@ -44,15 +44,6 @@
       "coverImage": "/images/artist/arnob.webp",
       "avatar": "/images/artist/arnob.webp",
       "playedCount": 42000
-    },
-    {
-      "id": 106,
-      "name": "Amake Amar Moto Thakte Dao by Anupam Roy",
-      "src": "/musics/amake-amar-moto-thakte-dao.mp3",
-      "artist": "Anupam Roy",
-      "coverImage": "/images/artist/anupam-roy.jpeg",
-      "avatar": "/images/artist/anupam-roy.jpeg",
-      "playedCount": 26000
     }
   ]
 }
