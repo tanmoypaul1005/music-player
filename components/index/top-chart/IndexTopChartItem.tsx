@@ -5,7 +5,7 @@ import { useAppStore } from "@/store/app-store";
 import useAudioDuration from "@/hooks/use-audio-duration";
 import Icon from "@/components/ui/Icon";
 import styles from "./IndexTopChartItem.module.scss";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,memo } from "react";
 
 const IndexTopChartItem = ({
   musicData,
@@ -103,4 +103,4 @@ const IndexTopChartItem = ({
   );
 };
 
-export default IndexTopChartItem;
+export default memo(IndexTopChartItem);

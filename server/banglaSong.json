@@ -1,14 +1,6 @@
 {
   "music": [
-    {
-      "id": 101,
-      "name": "Mayabono Biharini Horini",
-      "src": "/musics/Mayabono Biharini Horini.mp3",
-      "artist": "Somlata",
-      "coverImage": "/images/artist/somlota.jpeg",
-      "avatar": "/images/artist/somlota.jpeg",
-      "playedCount": 1200
-    },
+
     {
       "id": 102,
       "name": "Ami Hridoyer Kawtha",
@@ -35,6 +27,15 @@
       "coverImage": "/images/artist/bassbaba-sumon.webp",
       "avatar": "/images/artist/bassbaba-sumon.webp",
       "playedCount": 12000
+    },
+    {
+      "id": 101,
+      "name": "Mayabono Biharini Horini",
+      "src": "/musics/Mayabono Biharini Horini.mp3",
+      "artist": "Somlata",
+      "coverImage": "/images/artist/somlota.jpeg",
+      "avatar": "/images/artist/somlota.jpeg",
+      "playedCount": 1200
     },
     {
       "id": 105,
