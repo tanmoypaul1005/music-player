@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import { useAppStore } from "@/store/app-store";
@@ -41,9 +42,6 @@ const IndexTopChartItem = ({
     }
   };
 
-  const removeFromPlaylistClickHandler = () => {
-    onMusicClick("remove", musicData)
-  }
 
   const [duration, setDuration] = useState(null);
 
