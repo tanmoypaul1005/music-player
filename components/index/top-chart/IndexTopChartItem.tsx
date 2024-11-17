@@ -4,7 +4,7 @@ import { useAppStore } from "@/store/app-store";
 import useAudioDuration from "@/hooks/use-audio-duration";
 import Icon from "@/components/ui/Icon";
 import styles from "./IndexTopChartItem.module.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const IndexTopChartItem = ({
   musicData,
@@ -45,6 +45,31 @@ const IndexTopChartItem = ({
     onMusicClick("remove", musicData)
   }
 
+  const [duration, setDuration] = useState(null);
+
+  useEffect(() => {
+    if (musicData.src) {
+      const audio = new Audio(musicData.src);
+      audio.addEventListener('loadedmetadata', () => {
+        setDuration(audio.duration);
+      });
+
+      // Clean up the event listener
+      return () => {
+        audio.removeEventListener('loadedmetadata', () => {
+          setDuration(audio.duration);
+        });
+      };
+    }
+  }, [musicData.src]);
+
+  const formatDuration = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+  };
+
+
   return (
     <li style={{ listStyle: "none" }}>
       {output}
@@ -65,7 +90,7 @@ const IndexTopChartItem = ({
         </Link>
 
         <span className={styles.time}>
-          {durationSeconds ? `${formatedDuration}` : "00:00"}
+          {duration ? formatDuration(duration) : "00:00"}
         </span>
         <button
           className={`btn ${styles.button} ${styles.play} ${
