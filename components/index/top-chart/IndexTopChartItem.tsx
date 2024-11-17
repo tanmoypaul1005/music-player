@@ -5,7 +5,7 @@ import { useAppStore } from "@/store/app-store";
 import useAudioDuration from "@/hooks/use-audio-duration";
 import Icon from "@/components/ui/Icon";
 import styles from "./IndexTopChartItem.module.scss";
-import React, { useEffect, useState, memo } from "react";
+import React, { useEffect, useState, memo ,useRef} from "react";
 
 const IndexTopChartItem = ({
   musicData,
@@ -42,21 +42,39 @@ const IndexTopChartItem = ({
     }
   };
 
-
+  const audioRef = useRef(null);
   const [duration, setDuration] = useState(null);
+
+  // useEffect(() => {
+  //   if (musicData?.src) {
+  //     const audio = new Audio(musicData.src);
+  //     audio.addEventListener('loadedmetadata', () => {
+  //       setDuration(audio.duration);
+  //     });
+
+  //     // Clean up the event listener
+  //     return () => {
+  //       audio.removeEventListener('loadedmetadata', () => {
+  //         setDuration(audio.duration);
+  //       });
+  //     };
+  //   }
+  // }, [musicData.src]);
 
   useEffect(() => {
     if (musicData?.src) {
       const audio = new Audio(musicData.src);
-      audio.addEventListener('loadedmetadata', () => {
+      audioRef.current = audio;
+
+      const handleLoadedMetadata = () => {
         setDuration(audio.duration);
-      });
+      };
+
+      audio.addEventListener('loadedmetadata', handleLoadedMetadata);
 
       // Clean up the event listener
       return () => {
-        audio.removeEventListener('loadedmetadata', () => {
-          setDuration(audio.duration);
-        });
+        audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       };
     }
   }, [musicData.src]);
@@ -97,7 +115,7 @@ const IndexTopChartItem = ({
           >
             <Icon icon={currentMusic && isPlaying ? "pause-fill" : "play"} />
           </button>
-        </>: <div>Loading ...</div>
+        </>: <span className={styles.time}>Loading ...</span>
         }
       </div>
     </li>
