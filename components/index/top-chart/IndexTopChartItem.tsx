@@ -25,11 +25,11 @@ const IndexTopChartItem = ({
     state.setPlayingState,
   ]);
 
-  const { durationSeconds, formatedDuration, output } = useAudioDuration(musicData.src)
+  const { output } = useAudioDuration(musicData.src)
   const number = index < 10 ? `0${index}` : `${index}`;
   const currentMusic = music && music.id === musicData.id;
 
-  const musicPlayClickHandler = () => {
+  const musicPlayClickHandler = async() => {
     if (currentMusic) {
       if (isPlaying) {
         setIsPlaying(false);
@@ -38,7 +38,7 @@ const IndexTopChartItem = ({
       }
     } else {
       console.log("play music",musicData)
-      onMusicClick("play", musicData);
+     await onMusicClick("play", musicData);
     }
   };
 
@@ -46,7 +46,7 @@ const IndexTopChartItem = ({
   const [duration, setDuration] = useState(null);
 
   useEffect(() => {
-    if (musicData.src) {
+    if (musicData?.src) {
       const audio = new Audio(musicData.src);
       audio.addEventListener('loadedmetadata', () => {
         setDuration(audio.duration);
@@ -59,7 +59,7 @@ const IndexTopChartItem = ({
         });
       };
     }
-  }, [musicData.src]);
+  }, [musicData.src,index]);
 
   const formatDuration = (seconds) => {
     const minutes = Math.floor(seconds / 60);
