@@ -1,8 +1,3 @@
-interface RequestConfig {
-    url: string,
-    data?: RequestInit
-}
-
 interface ReadFileResponse {
     status: number,
     statusText: text,
