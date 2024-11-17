@@ -1,3 +1,8 @@
+interface ServiceResponse<T> {
+    status: number,
+    error: string,
+    data?: T
+}
 const GetMusic = async (id: number) : Promise<ServiceResponse<Music>> => {
     let status : number = 201;
     let error : string = "";
