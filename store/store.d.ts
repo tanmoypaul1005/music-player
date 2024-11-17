@@ -1,9 +1,3 @@
-interface authStoreState {
-    token: string,
-    id: number,
-    setInitialAuth: (token: string, id: number) => void,
- 
-}
 
 interface ThemeStoreState {
     darkMode: boolean,
@@ -27,16 +21,12 @@ interface AppStoreState {
     setMusicClicked: (music: Music) => void,
     setDisableKeyDown: (disabled: boolean) => void,
     setInitialApp: (payload: AppLocalStorage) => void,
-    // firstOpen: boolean,
     setRepeatType: (type: RepeatType) => void,
     setMusic: (music: Music) => void,
     setPlayingState: (status: boolean) => void,
     changeMusic: (type: ChangeMusicType,auto?: boolean) => void
-    // nextMusic: (type: ChangeMusicType,auto?: boolean) => void,
-    // prevMusic: () => void,
     setVolume: (newVal: number) => void,
     setPlaylist: (id: string, musics: Music[]) => void,
-    // changeFirstOpen: () => void,
     setCurrentMusicTime: (time: number) => void,
 }
 
