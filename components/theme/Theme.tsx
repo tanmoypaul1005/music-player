@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { useThemeStore } from "@/store/theme-store";
 import { useAppStore } from "@/store/app-store";
-
 import Loading from "../ui/loading/Loading";
 
 import '@/styles/globals.scss'
@@ -13,7 +12,6 @@ const ThemeProvider = ({
 } : {
     children: React.ReactNode
 }) => {
-    const [user, setUser] = useState<User>(null)
     const [loading, setLoading] = useState<boolean>(true)
     const [darkMode, setInitialDarkMode] = useThemeStore(state => [state.darkMode, state.setInitialDarkMode])
     const [currentMusic, setInitialApp] = useAppStore(state => [state.currentMusic, state.setInitialApp])
@@ -23,7 +21,7 @@ const ThemeProvider = ({
             if ( !localStorage.getItem(process.env.NEXT_PUBLIC_THEME_STORE) ) {
                 localStorage.setItem(process.env.NEXT_PUBLIC_THEME_STORE, "false")
             } else {
-                const darkModeItem = localStorage.getItem(process.env.NEXT_PUBLIC_THEME_STORE) === "true" ? true : false
+                // const darkModeItem = localStorage.getItem(process.env.NEXT_PUBLIC_THEME_STORE) === "true" ? true : false
                 setInitialDarkMode(true)
             }
 
