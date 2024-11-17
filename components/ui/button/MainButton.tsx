@@ -2,6 +2,8 @@
 import React, { CSSProperties } from 'react'
 import styles from './MainButton.module.scss'
 
+type buttonType = "button" | "reset" | "submit"
+
 const convertType = (type: ButtonType) => {
     switch (type) {
         case "primary-outline" :
