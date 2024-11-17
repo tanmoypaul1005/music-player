@@ -1,7 +1,9 @@
 "use client"
 import { Skeleton } from 'antd';
+
 import IndexArtistSkeleton from './IndexArtistSkeleton';
 import MainCard from '../../main-card/MainCard';
+
 import styles from './IndexSkeleton.module.scss'
 
 const IndexSkeleton = () => {

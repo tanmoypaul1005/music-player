@@ -36,7 +36,7 @@ const BanglaSongList = () => {
         display: "flex",
       }}>Top Bangla song</div>
       <ul className={styles.list}>
-        {musics?.map((music, index) => (
+        {musics.map((music, index) => (
           <IndexTopChartItem
             key={music.id}
             musicData={music}
