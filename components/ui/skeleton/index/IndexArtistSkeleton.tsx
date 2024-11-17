@@ -1,5 +1,4 @@
 import { Skeleton } from "antd";
-
 import styles from './IndexArtistSkeleton.module.scss'
 
 const IndexArtistSkeleton = () => {
@@ -7,7 +6,7 @@ const IndexArtistSkeleton = () => {
     return (
         <div className={styles.list}>
             {
-                skeltons.map((sklton, index) => (
+                skeltons.map((index) => (
                     <div className={styles.item} key={`index-top-artists-${index}`}>
                         <Skeleton.Image active className={styles.img} />
                         <Skeleton active title={{ width: "65%", className: styles.title }} paragraph={{ rows: 0 }} />

@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
 import { notFoundImage } from '@/public/images';
-
 import styles from './NotFound.module.scss'
 
 const NotFound = ({
