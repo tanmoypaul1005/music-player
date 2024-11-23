@@ -37,7 +37,6 @@ const IndexTopChartItem = ({
         setIsPlaying(true);
       }
     } else {
-      console.log("play music", musicData)
       await onMusicClick("play", musicData);
     }
   };
